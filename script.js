@@ -16,9 +16,9 @@ let removeBoredom = () => {
     fetch(url)
         .then(data => data.json())
         .then(item =>{
-            activity.textContent = `${item.activity}`,
-            type.textContent = `${item.type}`,
-            participants.textContent = `${item.participants}`;
+            activity.innerHTML = `${item.activity}`,
+            type.innerHTML = `${item.type}`,
+            participants.innerHTML = `${item.participants}`;
         });
 }
 
