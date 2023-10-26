@@ -22,5 +22,5 @@ let removeBoredom = () => {
         });
 }
 
-btn.addEventListener("click", removeBoredom);
+// btn.addEventListener("click", removeBoredom);
 
