@@ -29,11 +29,12 @@ let playSound=()=>{
 
 btn.addEventListener("click", ()=>{
     setTimeout(() => {
+        removeBoredom();
+    }, 500);
+    setTimeout(() => {
         hidden.classList.remove("hidden");
     }, 1000);
     playSound();
-    setTimeout(() => {
-        removeBoredom();
-    }, 1000);
+    
 });
 
