@@ -1,9 +1,9 @@
 const hidden = document.getElementById("hidden");
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click", function () {
-    hidden.classList.remove("hidden");
-})
+// btn.addEventListener("click", function () {
+//     hidden.classList.remove("hidden");
+// })
 
 
 // API
@@ -22,5 +22,18 @@ let removeBoredom = () => {
         });
 }
 
-btn.addEventListener("click", removeBoredom);
+let playSound=()=>{
+    const audio=new Audio('sound-effect-twinklesparkle-115095.mp3');
+    audio.play();
+}
+
+btn.addEventListener("click", ()=>{
+    setTimeout(() => {
+        hidden.classList.remove("hidden");
+    }, 1000);
+    playSound();
+    setTimeout(() => {
+        removeBoredom();
+    }, 1000);
+});
 
